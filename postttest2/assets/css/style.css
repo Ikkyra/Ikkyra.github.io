@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "montserrat", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: #FEF2F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+}
+
+.box-email-receipt {
+    width: 90%; 
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+
+.box-email-receipt .box-image {
+    width: 45%; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.box-email-receipt .box-image img {
+    width: 50%; 
+    max-width: 60%; 
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+.box-email-receipt .box-form {
+    flex: 1;
+    min-width: 0;
+    padding-left: 20px;
+}
+
+.box-email-receipt .title-box {
+    font-size: 28px;
+    font-weight: 600;
+    color: #88D49A;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.box-email-receipt .info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #828282;
+    margin-bottom: 20px;
+}
+
+.box-email-receipt .info-box span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.box-email-receipt .divider {
+    height: 1px;
+    background-color: #A6A6A6;
+    margin: 30px 0;
+}
+
+.box-email-receipt .item-pesanan {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.box-email-receipt .item-pesanan .text-m {
+    flex: 1;
+    min-width: none;
+}
+
+.box-email-receipt .item-pesanan .nomor {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #A7E887;
+    color: #5B9A6A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.box-email-receipt .item-pesanan .harga {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.box-email-receipt .fw6 {
+    font-weight: 600;
+}
+
+.box-email-receipt .main {
+    color: #5B9A6A;
+}
+
+@media (max-width: 991px) {
+    body, html {
+        font-size: 14px;
+    }
+
+    .box-email-receipt .title-box {
+        font-size: 20px;
+    }
+
+    .box-email-receipt .item-pesanan .nomor {
+        width: 32px;
+        height: 32px;
+    }
+
+    .box-email-receipt .item-pesanan .harga {
+        font-size: 18px;
+    }
+
+    .box-email-receipt .divider {
+        margin: 20px 0;
+    }
+
+    .box-email-receipt .item-pesanan {
+        margin-bottom: 20px;
+    }
+
+    .box-email-receipt .box-form {
+        padding: 0;
+    }
+
+    .box-email-receipt {
+        flex-direction: column;
+    }
+
+    .box-email-receipt .box-image {
+        width: 60%; 
+    }
+    .box-email-receipt .box-image img {
+        height: 200px;  
+    }
+}
+
+@media (max-width: 768px) {
+    .box-email-receipt {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .box-email-receipt .box-image img {
+        max-height: 180px;
+    }
+
+    .box-email-receipt .info-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .box-email-receipt .info-box span {
+        margin-bottom: 5px;
+    }
+}
